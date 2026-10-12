@@ -1,0 +1,49 @@
+# ============================================================================
+# Phusion Passenger: Next.js app (cPanel "Setup Node.js App")
+# ----------------------------------------------------------------------------
+# The block below tells Apache/Passenger how to boot the Node app via server.js.
+#
+# NOTE: If you create the app through cPanel > "Setup Node.js App", cPanel
+# writes this block itself and manages the exact paths. If you deploy by hand,
+# fill in the three placeholders below with the real values for your account:
+#
+#   <HOME>       e.g. /home/cpaneluser
+#   <APP_DIR>    the folder this .htaccess sits in, e.g. plutus-media-clone/frontend
+#   <NODE_VER>   the Node version you selected, e.g. 22
+# ============================================================================
+
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "<HOME>/<APP_DIR>"
+PassengerBaseURI "/"
+PassengerNodejs "<HOME>/nodevenv/<APP_DIR>/<NODE_VER>/bin/node"
+PassengerAppType node
+PassengerStartupFile server.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+
+# ============================================================================
+# Force HTTPS (leave enabled once your SSL cert is active)
+# ============================================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ============================================================================
+# Security headers
+# ============================================================================
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # HSTS: only enable once you are confident HTTPS is working everywhere.
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ============================================================================
+# Don't let Apache serve the raw app source/config directly.
+# (Passenger handles all app routing; these are just belt-and-suspenders.)
+# ============================================================================
+<FilesMatch "(^\.env|\.env\.|package(-lock)?\.json$|next\.config\.|tsconfig\.|middleware\.ts$|server\.js$)">
+  Require all denied
+</FilesMatch>
