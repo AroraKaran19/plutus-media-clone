@@ -1,61 +1,72 @@
 @import "tailwindcss";
 
-/* Brand palette sampled from public/logo.svg. Use the tokens
-   (bg-primary, text-secondary), never the raw hex. */
+/* Tokens measured from growwithplutus.com. Use the tokens, never the raw hex. */
 @theme {
-  --color-primary: #ec2024;
-  --color-accent: #ff3030;
-  --color-secondary: #ffffff;
-  --color-tertiary: #000000;
-  --font-sans: var(--font-plus-jakarta);
-  --color-rating: #cff139;
-  /* ESTIMATED from the design screenshot. */
-  --color-surface: #f6f6f6;
-  --color-offer: #a5e8c9;
+  --color-ink: #03051c;
+  --color-ice: #bdd3ff;
+  --color-frost: #e0eefe;
+  --color-mist: #9fb2cc;
+  --color-line: #282c5e;
+  --color-line-soft: #20243b;
+  --color-line-light: #161a46;
+  --color-caption: #141830;
+  --color-highlight: #737aff;
+  --color-faq-open: #0b0c29;
+  --color-divider: #444b67;
+
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-inter);
+
+  /* Framer breakpoints: tablet from 810px, desktop from 1200px. */
+  --breakpoint-md: 810px;
+  --breakpoint-lg: 1200px;
+
+  --animate-marquee: marquee var(--marquee-duration, 40s) linear infinite;
 }
 
-/* ESTIMATED from the design screenshot, awaiting exact values. */
-@utility feature-card {
-  background-image: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    #ffffff 30%,
-    #fcd9d6 100%
-  );
+@utility text-gradient-heading {
+  color: var(--color-ice);
+  background-image: linear-gradient(0deg, #eaf4ff 0%, #bdd3ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* ESTIMATED from the design screenshot, awaiting exact values. Layered radials
-   approximate the mesh gradient in the banner. */
-@utility cta-banner {
-  background-color: #8d1b24;
-  background-image:
-    radial-gradient(at 82% 45%, #d3936a 0%, transparent 55%),
-    radial-gradient(at 22% 88%, #6d2547 0%, transparent 55%),
-    radial-gradient(at 12% 10%, #4a0d17 0%, transparent 50%),
-    linear-gradient(115deg, #6b1020 0%, #a8202a 55%, #bf7a52 100%);
+@utility text-gradient-body {
+  color: var(--color-frost);
+  background-image: linear-gradient(0deg, #bad6f5 0%, #e9f3ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@utility cta-gradient {
-  background-image: linear-gradient(
-    100.28deg,
-    #bf5107 5.04%,
-    #ff6868 49.31%,
-    #b53403 89.42%
-  );
+@utility glass-pill {
+  background-color: rgb(161 186 221 / 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--color-line);
 }
 
-/* ESTIMATED from the design screenshot, awaiting exact values. */
-@utility bg-icon-tile {
-  background-color: #ff2e2e;
+@utility card-dark {
+  background-image: linear-gradient(#040721 0%, #03051c 100%);
 }
 
-@utility badge-gradient {
-  background-image: linear-gradient(
-    272.11deg,
-    #ff2e2e 0.47%,
-    #eb9b65 76.38%,
-    #ff2e2e 96.74%
-  );
+@utility card-ice {
+  background-image: linear-gradient(#bdd3ff 0%, #eaf4ff 100%);
+}
+
+@utility card-blush {
+  background-image: linear-gradient(161deg, #fabdbd 14.6%, #ff8e8c 51.9%, #7479ff 111.9%);
+}
+
+@utility edge-fade {
+  mask-image: linear-gradient(to right, transparent 0%, #000 12.5%, #000 87.5%, transparent 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  background-color: var(--color-ink);
 }
 
 button {
@@ -66,24 +77,40 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Stretch Chrome's calendar glyph over the whole date field and hide it, so a
-   themed icon can sit in its place and a click anywhere opens the picker. */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  position: absolute;
-  inset: 0;
-  width: auto;
-  height: auto;
-  cursor: pointer;
-  opacity: 0;
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Browsers without scroll timelines simply show content without the reveal. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: fade-up linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee {
+    animation-play-state: paused;
   }
 }

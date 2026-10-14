@@ -1,0 +1,528 @@
+{
+  "seo": {
+    "title": "TikTok Marketing for Consumer Apps",
+    "description": "Viral Micro Influencer Campaigns for Consumer Apps. Fully Done-for-You Content Creation & Social Media Management Program.",
+    "ogImage": {
+      "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/brand/og-image",
+      "publicId": "plutus-media/site/brand/og-image"
+    }
+  },
+  "navbar": {
+    "logo": {
+      "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/brand/logo-wordmark",
+      "publicId": "plutus-media/site/brand/logo-wordmark"
+    },
+    "items": [
+      {
+        "label": "Testimonials",
+        "href": "#testimonials"
+      },
+      {
+        "label": "Case Studies",
+        "href": "#case-studies"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      },
+      {
+        "label": "Blog",
+        "href": "https://growwithplutus.com/blog"
+      }
+    ],
+    "cta": {
+      "label": "Get Started",
+      "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+    }
+  },
+  "sections": {
+    "hero": {
+      "pill": "📈 Growth on Autopilot",
+      "title": "Scaling Consumer Apps through Proven Canvas UGC Systems",
+      "subtitle": "Predictable organic growth backed by an award-winning team and a battle-tested system.",
+      "cta": {
+        "label": "Book a Strategy Call",
+        "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+      },
+      "note": "No-commitment 30 minute audit call",
+      "videos": [
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-01-trimbox-5m",
+            "publicId": "plutus-media/site/videos/hero-01-trimbox-5m"
+          },
+          "label": "Trimbox",
+          "views": "5M"
+        },
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-02-learna-ai-12-6m",
+            "publicId": "plutus-media/site/videos/hero-02-learna-ai-12-6m"
+          },
+          "label": "Learna AI",
+          "views": "12.6M"
+        },
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-03-what-colors-6m",
+            "publicId": "plutus-media/site/videos/hero-03-what-colors-6m"
+          },
+          "label": "What Colors",
+          "views": "6M"
+        },
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-04-deepsearch-15-16m",
+            "publicId": "plutus-media/site/videos/hero-04-deepsearch-15-16m"
+          },
+          "label": "Deepsearch",
+          "views": "15.16M"
+        },
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-05-brainly-27-3m",
+            "publicId": "plutus-media/site/videos/hero-05-brainly-27-3m"
+          },
+          "label": "Brainly",
+          "views": "27.3M"
+        },
+        {
+          "video": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/video/upload/plutus-media/site/videos/hero-06-unnamed-13-1m",
+            "publicId": "plutus-media/site/videos/hero-06-unnamed-13-1m"
+          },
+          "label": "Client app",
+          "views": "13.1M"
+        }
+      ]
+    },
+    "clients": {
+      "heading": "Trusted by 250+ worldwide clients",
+      "logos": [
+        {
+          "name": "Client 1",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-01",
+            "publicId": "plutus-media/site/client-logos/logo-01"
+          }
+        },
+        {
+          "name": "Client 2",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-02",
+            "publicId": "plutus-media/site/client-logos/logo-02"
+          }
+        },
+        {
+          "name": "Client 3",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-03",
+            "publicId": "plutus-media/site/client-logos/logo-03"
+          }
+        },
+        {
+          "name": "Client 4",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-04",
+            "publicId": "plutus-media/site/client-logos/logo-04"
+          }
+        },
+        {
+          "name": "Client 5",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-05",
+            "publicId": "plutus-media/site/client-logos/logo-05"
+          }
+        },
+        {
+          "name": "Client 6",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-06",
+            "publicId": "plutus-media/site/client-logos/logo-06"
+          }
+        },
+        {
+          "name": "Client 7",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-07",
+            "publicId": "plutus-media/site/client-logos/logo-07"
+          }
+        },
+        {
+          "name": "Client 8",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-08",
+            "publicId": "plutus-media/site/client-logos/logo-08"
+          }
+        },
+        {
+          "name": "Client 9",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-09",
+            "publicId": "plutus-media/site/client-logos/logo-09"
+          }
+        },
+        {
+          "name": "Client 10",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-10",
+            "publicId": "plutus-media/site/client-logos/logo-10"
+          }
+        },
+        {
+          "name": "Client 11",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-11",
+            "publicId": "plutus-media/site/client-logos/logo-11"
+          }
+        },
+        {
+          "name": "Client 12",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-12",
+            "publicId": "plutus-media/site/client-logos/logo-12"
+          }
+        },
+        {
+          "name": "Client 13",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-13",
+            "publicId": "plutus-media/site/client-logos/logo-13"
+          }
+        },
+        {
+          "name": "Client 14",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-14",
+            "publicId": "plutus-media/site/client-logos/logo-14"
+          }
+        },
+        {
+          "name": "Client 15",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-15",
+            "publicId": "plutus-media/site/client-logos/logo-15"
+          }
+        },
+        {
+          "name": "Client 16",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/client-logos/logo-16",
+            "publicId": "plutus-media/site/client-logos/logo-16"
+          }
+        }
+      ]
+    },
+    "about": {
+      "pill": "About Plutus Media",
+      "title": "The Content Engine Behind Category-Leading Consumer Apps",
+      "video": {
+        "link": "tiegD-0SDYQ",
+        "video": null,
+        "thumbnail": {
+          "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/about-tiegD-0SDYQ",
+          "publicId": "plutus-media/site/youtube/about-tiegD-0SDYQ"
+        }
+      },
+      "cta": {
+        "label": "Book a Strategy Call",
+        "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+      }
+    },
+    "caseStudies": {
+      "pill": "Case Studies",
+      "title": "A few success stories",
+      "items": [
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/01-100m-views-320k",
+            "publicId": "plutus-media/site/case-studies/01-100m-views-320k"
+          },
+          "caption": "**100 Million views** and **$320k generated** in 5 months"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/02-50m-views-500k-users",
+            "publicId": "plutus-media/site/case-studies/02-50m-views-500k-users"
+          },
+          "caption": "**50 Million views** and **+500k new users** in 7 months"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/03-top25-20k-installs",
+            "publicId": "plutus-media/site/case-studies/03-top25-20k-installs"
+          },
+          "caption": "**Top 25 on App Store, 20k installs** and **$0,4 CPI** in 4 weeks"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/04-17m-views-top10",
+            "publicId": "plutus-media/site/case-studies/04-17m-views-top10"
+          },
+          "caption": "**17 Million views** and **Top 10 on App Store** in 1 month"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/05-2m-users-3x-signup",
+            "publicId": "plutus-media/site/case-studies/05-2m-users-3x-signup"
+          },
+          "caption": "**2 million new users** and **3x sign-up rate** in 4 months"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/06-15m-views-100k-installs",
+            "publicId": "plutus-media/site/case-studies/06-15m-views-100k-installs"
+          },
+          "caption": "**15 Million views** and **100k installs** in under 30 days"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/07-30k-followers-4x-mrr",
+            "publicId": "plutus-media/site/case-studies/07-30k-followers-4x-mrr"
+          },
+          "caption": "**30k followers**, **3x installs** and **4x MRR** in 2 months"
+        },
+        {
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/case-studies/08-millions-after-3-agencies",
+            "publicId": "plutus-media/site/case-studies/08-millions-after-3-agencies"
+          },
+          "caption": "Millions of views - **after 3 failed agencies** - in the first 30 days"
+        }
+      ],
+      "cta": {
+        "label": "Learn More",
+        "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+      }
+    },
+    "testimonials": {
+      "pill": "Testimonials",
+      "title": "Hear from our clients",
+      "subtitle": "Hear what other software founders have to say.",
+      "videos": [
+        {
+          "link": "IPPxzh-_Lxo",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-01-IPPxzh-_Lxo",
+            "publicId": "plutus-media/site/youtube/testimonial-01-IPPxzh-_Lxo"
+          }
+        },
+        {
+          "link": "offSGZ29gBE",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-02-offSGZ29gBE",
+            "publicId": "plutus-media/site/youtube/testimonial-02-offSGZ29gBE"
+          }
+        },
+        {
+          "link": "zUIrdR3xp80",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-03-zUIrdR3xp80",
+            "publicId": "plutus-media/site/youtube/testimonial-03-zUIrdR3xp80"
+          }
+        },
+        {
+          "link": "ZtbjnWq5cY0",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-04-ZtbjnWq5cY0",
+            "publicId": "plutus-media/site/youtube/testimonial-04-ZtbjnWq5cY0"
+          }
+        },
+        {
+          "link": "DJt6xxVYVaQ",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-05-DJt6xxVYVaQ",
+            "publicId": "plutus-media/site/youtube/testimonial-05-DJt6xxVYVaQ"
+          }
+        },
+        {
+          "link": "DT5vYHIXivI",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-06-DT5vYHIXivI",
+            "publicId": "plutus-media/site/youtube/testimonial-06-DT5vYHIXivI"
+          }
+        },
+        {
+          "link": "il60XtWCW74",
+          "video": null,
+          "thumbnail": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/youtube/testimonial-07-il60XtWCW74",
+            "publicId": "plutus-media/site/youtube/testimonial-07-il60XtWCW74"
+          }
+        }
+      ]
+    },
+    "benefits": {
+      "pill": "Benefits",
+      "title": "Why Plutus Media?",
+      "items": [
+        {
+          "icon": "line-chart",
+          "title": "Predictable Organic Growth That Converts",
+          "body": "We build scalable, data-driven systems that turn viewers into paying users. We eliminate randomness, ensuring your app grows consistently without reliance on paid ads."
+        },
+        {
+          "icon": "magic-wand",
+          "title": "The go-to Agency for Consumer Apps",
+          "body": "As the world-leading agency for Consumer Apps, our seasoned creative team blends storytelling with insights to position your brand at the forefront of innovation."
+        },
+        {
+          "icon": "persona",
+          "title": "Full Ownership, No Dependency",
+          "body": "We don’t rent influencers or chase temporary solutions. We build content pipelines that you own, so your growth compounds with or without us."
+        }
+      ],
+      "values": [
+        {
+          "icon": "chat",
+          "tone": "ice",
+          "title": "No Guesswork",
+          "body": "We track campaigns methodically, adjust fast, and optimize for installs, not vanity metrics. If something isn’t working, we course-correct in real-time."
+        },
+        {
+          "icon": "sparkle",
+          "tone": "dark",
+          "title": "Excellence",
+          "body": "Our pursuit of excellence is relentless, driving us to achieve the highest standards and integrity in our work, with a focus on developing the right strategy for every project."
+        },
+        {
+          "icon": "collab",
+          "tone": "blush",
+          "title": "Collaboration",
+          "body": "We integrate with your team, align with your goals, and build a growth engine that keeps working long after we do. We’re not just a service, we’re a long-term partner in scaling your success."
+        }
+      ]
+    },
+    "blog": {
+      "pill": "Blog",
+      "title": "Plutus Resources",
+      "posts": [
+        {
+          "title": "What Is Canvas UGC? How the Model Works for Consumer Apps",
+          "href": "https://growwithplutus.com/blog/canvas-ugc",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/blog/thumbnails/01-canvas-ugc",
+            "publicId": "plutus-media/site/blog/thumbnails/01-canvas-ugc"
+          }
+        },
+        {
+          "title": "BibleBFF Found One Winning Hook. Then They Ran It Through a Cloning Machine",
+          "href": "https://growwithplutus.com/blog/biblebff-found-one-winning-hook.-then-they-ran-it-through-a-cloning-machine",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/blog/thumbnails/02-biblebff-found-one-winning-hook-then-they-ran-it-through-a-cloning-machine",
+            "publicId": "plutus-media/site/blog/thumbnails/02-biblebff-found-one-winning-hook-then-they-ran-it-through-a-cloning-machine"
+          }
+        },
+        {
+          "title": "How Simmy is Using UGC to Build Hype Before Their App Even Launches",
+          "href": "https://growwithplutus.com/blog/how-simmy-is-using-ugc-to-build-hype-before-their-app-even-launches",
+          "image": {
+            "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/blog/thumbnails/03-how-simmy-is-using-ugc-to-build-hype-before-their-app-even-launches",
+            "publicId": "plutus-media/site/blog/thumbnails/03-how-simmy-is-using-ugc-to-build-hype-before-their-app-even-launches"
+          }
+        }
+      ],
+      "cta": {
+        "label": "View all resources",
+        "href": "https://growwithplutus.com/blog"
+      }
+    },
+    "faq": {
+      "pill": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "How are you different from other agencies?",
+          "answer": "Plutus Media stands apart through our comprehensive, end-to-end solution for short-form content creation, leveraging our in-house team of creatives and exclusive network of over 10,000 creators. Unlike many agencies, we specialize in organic growth, driving user acquisition without the need for paid advertising. Our unique approach combines award-winning expertise with strategic partnerships and a global creator network, ensuring unmatched quality and effectiveness in the content we produce."
+        },
+        {
+          "question": "How do I know if my company is a fit?",
+          "answer": "If you're a B2C company, especially within AI start-ups, SaaS products, or mobile apps, looking to significantly boost your user acquisition through high-quality, organic short-form content, then Plutus Media is the right fit for you. Our ideal partners are companies ready to invest in their growth, aiming to establish or enhance their presence on platforms like TikTok, Instagram Reels, and YouTube Shorts."
+        },
+        {
+          "question": "What social media platforms can you deliver on?",
+          "answer": "Plutus Media specializes in producing and managing content across the most impactful short-form content platforms, including TikTok, Instagram (Reels), and YouTube (Shorts). Our strategies are tailored to each platform's unique audience and algorithms, ensuring maximum engagement and growth for our clients."
+        },
+        {
+          "question": "Are creator fees included in your pricing?",
+          "answer": "Yes, all our packages are fully inclusive of creator fees. We provide a seamless service that covers everything from strategy and creative development to content production and posting, without any hidden costs."
+        },
+        {
+          "question": "Why don’t I just hire my own creators?",
+          "answer": "While hiring your own creators is an option, partnering with Plutus Media removes the complexities of sourcing, managing, and ensuring consistent quality and performance. Our global network of vetted creators and strategic industry partnerships, combined with our expertise in trend analysis and content strategy, offer a level of efficiency and effectiveness hard to replicate in-house."
+        },
+        {
+          "question": "What results can I expect?",
+          "answer": "With Plutus Media, clients can expect significant growth in viewer engagement, follower numbers, and user acquisition. We track key metrics such as views, follower growth, and users acquired, having achieved millions of views and substantial user growth for our clients often in less than 30 days."
+        },
+        {
+          "question": "How long does it take to see results?",
+          "answer": "Our clients typically begin to see tangible results within the first month of working with us. With our end-to-end solution and efficient content production system, we ensure a swift turnaround while maintaining the highest standards of quality."
+        },
+        {
+          "question": "Do you offer a trial or test period?",
+          "answer": "We focus on building long-term partnerships with our clients through trust and demonstrated success. While we do not offer a trial or test period, our team is committed to ensuring each campaign's success from the outset, with options tailored to various scales and needs."
+        },
+        {
+          "question": "Where are you based?",
+          "answer": "Plutus Media operates globally, with our creative and creator teams based in the US, Portugal, Canada, the UK, and Europe. This international presence allows us to tap into a wide range of creative talents and market insights, enhancing the effectiveness of our campaigns."
+        },
+        {
+          "question": "Who’s behind the team?",
+          "answer": "Industry veterans spearhead our team from traditional and new media including an Emmy-winning copywriter, an award-winning content marketer as well as an expert in startup ecosystems. Furthermore, we’re anchored by a vetted network of over 1,000 creators and exclusive industry partnerships for seamless project commencement and timely execution."
+        }
+      ],
+      "cta": {
+        "label": "Book a Strategy Call",
+        "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+      }
+    },
+    "cta": {
+      "pill": "🚨 Stop Struggling With Traffic 🚨",
+      "title": "Get Millions of Organic Views and Thousands of New Users With Our Viral Content Strategy for Consumer Apps.",
+      "titleMobile": "Get 1M+ Organic Views and Thousands of New Users With Our Viral Content Strategy for AI Apps and SaaS in 30 days or less.",
+      "subtitle": "Creating and implementing viral growth strategies for Consumer Apps.",
+      "cta": {
+        "label": "Book a Strategy Call",
+        "href": "https://app.iclosed.io/e/alexolim/growth-audit"
+      },
+      "note": "No-commitment 30 minute audit call"
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "label": "Testimonials",
+        "href": "#testimonials"
+      },
+      {
+        "label": "Case Studies",
+        "href": "#case-studies"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "https://growwithplutus.com/tc"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "linkedin",
+        "href": "https://www.linkedin.com/company/growwithplutus/"
+      },
+      {
+        "platform": "x",
+        "href": "https://x.com/alexolim_"
+      }
+    ]
+  }
+}
