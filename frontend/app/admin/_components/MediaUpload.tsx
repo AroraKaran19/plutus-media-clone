@@ -3,6 +3,7 @@
 import { CloudUpload, Trash2 } from "lucide-react";
 import { CldUploadWidget } from "next-cloudinary";
 import { useMediaUpload } from "@/lib/admin/hooks/useMediaUpload";
+import { signUpload } from "@/lib/admin/api";
 import type { Media } from "@/lib/content/schema";
 import { FieldLabel } from "./Field";
 
@@ -49,8 +50,13 @@ export const MediaUpload = ({ label, value, onChange, resourceType = "image", hi
         )}
 
         <CldUploadWidget
-          signatureEndpoint="/api/media/signature"
-          options={{ folder: process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER, resourceType, multiple: false, sources: ["local", "url"] }}
+          options={{
+            uploadSignature: signUpload,
+            folder: process.env.NEXT_PUBLIC_CLOUDINARY_FOLDER,
+            resourceType,
+            multiple: false,
+            sources: ["local", "url"],
+          }}
           onSuccess={async (result) => {
             const info = result.info;
             if (typeof info === "string" || !info) return;

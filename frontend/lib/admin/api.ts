@@ -27,10 +27,13 @@ export class ApiError extends Error {
   }
 }
 
-// Same-origin: next.config rewrites /api to Express, so the httpOnly cookie rides along.
+// Unset in dev, where the next.config /api rewrite keeps calls same-origin.
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "";
+
 const adminFetch = async <T>(path: string, init?: RequestInit): Promise<T> => {
-  const res = await fetch(`/api${path}`, {
+  const res = await fetch(`${API_BASE}/api${path}`, {
     ...init,
+    credentials: "include",
     headers: { "content-type": "application/json", ...init?.headers },
   });
 
@@ -64,3 +67,19 @@ export const patchArea = <T>(area: string, data: T) =>
 
 export const deleteMedia = (publicId: string, resourceType: "image" | "video") =>
   adminFetch<unknown>("/media", { method: "DELETE", body: JSON.stringify({ publicId, resourceType }) });
+
+// Replaces the widget's signatureEndpoint, whose fetch omits credentials cross-origin.
+export const signUpload = (
+  callback: (signature: string | null, error?: unknown) => void,
+  paramsToSign: Record<string, unknown>
+) => {
+  fetch(`${API_BASE}/api/media/signature`, {
+    method: "POST",
+    credentials: "include",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ paramsToSign }),
+  })
+    .then((res) => res.json())
+    .then((body) => callback(body.signature))
+    .catch((error) => callback(null, error));
+};

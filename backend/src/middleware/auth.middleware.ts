@@ -16,6 +16,7 @@ export const cookieOptions = {
   sameSite: "lax" as const,
   maxAge: 7 * 24 * 60 * 60 * 1000,
   path: "/",
+  ...(env.COOKIE_DOMAIN ? { domain: env.COOKIE_DOMAIN } : {}),
 };
 
 export const signToken = (userId: string) =>

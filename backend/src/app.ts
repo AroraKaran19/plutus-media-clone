@@ -8,7 +8,8 @@ import { env } from "./config/env";
 
 const app = express();
 
-app.use(cors({ origin: true, credentials: true }));
+const allowedOrigins = env.ALLOWED_ORIGINS?.split(",").map((o) => o.trim());
+app.use(cors({ origin: allowedOrigins ?? true, credentials: true }));
 
 // Uploads go browser to Cloudinary directly, so bodies stay small.
 app.use(express.json({ limit: "1mb" }));

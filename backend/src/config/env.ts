@@ -21,6 +21,14 @@ const envSchema = z.object({
   // Optional: without these, saves still persist but the cache expires on schedule.
   FRONTEND_REVALIDATE_URL: z.string().url().optional(),
   REVALIDATE_SECRET: z.string().optional(),
+
+  // Comma-separated sites allowed to call the API with cookies.
+  ALLOWED_ORIGINS: z.string().optional(),
+  // Shared parent of the site and API hosts, so both can read the login cookie.
+  COOKIE_DOMAIN: z.string().optional(),
+}).refine((e) => e.NODE_ENV !== "production" || !!e.ALLOWED_ORIGINS, {
+  path: ["ALLOWED_ORIGINS"],
+  message: "required in production",
 });
 
 const parsed = envSchema.safeParse(process.env);
