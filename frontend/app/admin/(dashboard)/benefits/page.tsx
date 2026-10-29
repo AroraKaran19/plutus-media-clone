@@ -5,6 +5,7 @@ import { ArrayField } from "../../_components/ArrayField";
 import { EditorShell } from "../../_components/EditorShell";
 import { Field, Select, TextArea } from "../../_components/Field";
 import { IconPicker } from "../../_components/IconPicker";
+import { MediaUpload } from "../../_components/MediaUpload";
 import { SectionHeadingFields } from "../../_components/SectionHeadingFields";
 
 type Benefits = Sections["benefits"];
@@ -21,7 +22,7 @@ const ICON_LABELS: Record<CardIcon, string> = {
 const TONE_LABELS: Record<ValueTone, string> = { ice: "Light blue", dark: "Dark", blush: "Pink gradient" };
 
 const BenefitsPage = () => (
-  <EditorShell<Benefits> title="Benefits" description="The three benefit columns and the three value cards beneath them." area="sections.benefits" select={(c) => c.sections.benefits}>
+  <EditorShell<Benefits> title="Benefits" description="The three benefit columns, the centre logo, and the three value cards beneath them." area="sections.benefits" select={(c) => c.sections.benefits}>
     {(draft, setDraft) => (
       <>
         <SectionHeadingFields pill={draft.pill} title={draft.title} onPill={(pill) => setDraft((d) => ({ ...d, pill }))} onTitle={(title) => setDraft((d) => ({ ...d, title }))} />
@@ -43,6 +44,14 @@ const BenefitsPage = () => (
               <TextArea label="Text" rows={3} value={item.body} onChange={(body) => update({ ...item, body })} />
             </>
           )}
+        />
+
+        <MediaUpload
+          label="Centre logo"
+          required
+          value={draft.logo}
+          onChange={(logo) => logo && setDraft((d) => ({ ...d, logo }))}
+          hint="A white mark on a transparent background, roughly square. Shown at 54 × 51 inside the dark tile."
         />
 
         <ArrayField<Benefits["values"][number]>

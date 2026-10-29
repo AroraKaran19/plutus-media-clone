@@ -94,6 +94,7 @@ export const siteContentSchema = z.object({
       pill: z.string(),
       title: z.string().min(1),
       items: z.array(cardSchema).max(MAX_CARDS),
+      logo: mediaSchema,
       values: z.array(cardSchema.extend({ tone: z.enum(VALUE_TONES) })).max(MAX_CARDS),
     }),
     blog: z.object({

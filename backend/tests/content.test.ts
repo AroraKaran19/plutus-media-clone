@@ -62,6 +62,12 @@ describe("AREA_SCHEMAS", () => {
     });
     expect(result.success).toBe(false);
   });
+
+  it("requires the benefits centre logo", () => {
+    const { logo: _logo, ...withoutLogo } = defaults.sections.benefits;
+    expect(AREA_SCHEMAS["sections.benefits"].safeParse(withoutLogo).success).toBe(false);
+    expect(AREA_SCHEMAS["sections.benefits"].safeParse({ ...withoutLogo, logo: media }).success).toBe(true);
+  });
 });
 
 describe("GET /api/content", () => {

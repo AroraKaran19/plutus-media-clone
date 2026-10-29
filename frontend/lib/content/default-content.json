@@ -378,6 +378,10 @@
           "body": "We don’t rent influencers or chase temporary solutions. We build content pipelines that you own, so your growth compounds with or without us."
         }
       ],
+      "logo": {
+        "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/brand/logo-mark-benefits",
+        "publicId": "plutus-media/site/brand/logo-mark-benefits"
+      },
       "values": [
         {
           "icon": "chat",

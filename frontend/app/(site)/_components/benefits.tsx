@@ -1,6 +1,5 @@
 import { CldImage } from "./cld-image";
 import { cn } from "@/app/utils";
-import { assetId } from "@/app/utils/cloudinary";
 import type { Sections, ValueTone } from "@/lib/content/schema";
 import { CARD_ICON_COMPONENTS } from "./icons";
 import { SectionHeader } from "./ui";
@@ -58,7 +57,7 @@ export const Benefits = ({ benefits }: { benefits: Sections["benefits"] }) => (
       <div className="mx-auto grid size-[132px] place-items-center rounded-[38px] bg-[#070920] shadow-[0_0_40px_rgb(40_44_94/0.35)]">
         <div className="grid size-[110px] place-items-center rounded-[32px] bg-[#0f1129]">
           <div className="grid size-[86px] place-items-center rounded-[24px] bg-[#1b1d35]">
-            <CldImage src={assetId("brand/logo-mark-benefits")} alt="Plutus Media" width={54} height={51} className="h-[51px] w-[54px]" />
+            <CldImage src={benefits.logo.publicId} alt="Plutus Media" width={54} height={51} className="h-[51px] w-[54px] object-contain" />
           </div>
         </div>
       </div>

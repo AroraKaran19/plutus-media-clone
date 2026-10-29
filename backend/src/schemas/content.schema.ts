@@ -119,6 +119,8 @@ export const benefitsSchema = z.object({
   pill: z.string(),
   title: z.string().min(1),
   items: z.array(cardSchema).max(MAX_CARDS, `At most ${MAX_CARDS} benefits`),
+  // The mark in the hub tile between the two card rows.
+  logo: mediaSchema,
   values: z.array(cardSchema.extend({ tone: z.enum(VALUE_TONES) })).max(MAX_CARDS, `At most ${MAX_CARDS} values`),
 });
 
