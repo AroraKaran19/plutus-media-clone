@@ -104,4 +104,4 @@ export const LinkFields = ({
 );
 
 export const VIDEO_LINK_HINT =
-  "Any link works. YouTube, Vimeo, Loom and direct video files (.mp4) play on the page; other links open in a new tab.";
+  "Any link works. YouTube, Vimeo, Wistia, Loom and direct video files (.mp4) play on the page; other links open in a new tab.";

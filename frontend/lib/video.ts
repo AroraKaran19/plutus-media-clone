@@ -26,6 +26,9 @@ export const resolveVideo = (link: string, uploadPublicId?: string): PlayableVid
   const loom = link.match(/loom\.com\/(?:share|embed)\/([\w]+)/)?.[1];
   if (loom) return { kind: "embed", src: `https://www.loom.com/embed/${loom}?autoplay=1` };
 
+  const wistia = link.match(/(?:wistia\.(?:com|net)|wi\.st)\/(?:embed\/(?:iframe|medias)|medias)\/([a-zA-Z0-9]+)/)?.[1];
+  if (wistia) return { kind: "embed", src: `https://fast.wistia.net/embed/iframe/${wistia}?autoPlay=true` };
+
   if (/\.(mp4|webm|mov|ogg|m4v)(\?|#|$)/i.test(link)) return { kind: "file", src: link };
 
   return { kind: "external", href: link };
