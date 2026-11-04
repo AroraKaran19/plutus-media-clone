@@ -18,6 +18,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
     title: seo.title,
     description: seo.description,
     openGraph: { title: seo.title, description: seo.description, images },
+    icons: seo.favicon ? { icon: imageUrl(seo.favicon.publicId, 192) } : undefined,
   };
 };
 

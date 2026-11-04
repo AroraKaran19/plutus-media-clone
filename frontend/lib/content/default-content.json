@@ -5,7 +5,8 @@
     "ogImage": {
       "url": "https://res.cloudinary.com/dpe7f86f8/image/upload/plutus-media/site/brand/og-image",
       "publicId": "plutus-media/site/brand/og-image"
-    }
+    },
+    "favicon": null
   },
   "navbar": {
     "logo": {

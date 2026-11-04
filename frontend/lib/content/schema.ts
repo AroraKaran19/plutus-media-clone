@@ -53,6 +53,7 @@ export const siteContentSchema = z.object({
     title: z.string().min(1),
     description: z.string(),
     ogImage: mediaSchema.nullable(),
+    favicon: mediaSchema.nullable().default(null),
   }),
   navbar: z.object({
     logo: mediaSchema.nullable(),

@@ -52,6 +52,7 @@ export const seoSchema = z.object({
   title: z.string().min(1),
   description: z.string(),
   ogImage: mediaSchema.nullable(),
+  favicon: mediaSchema.nullable().default(null),
 });
 
 export const navbarSchema = z.object({
